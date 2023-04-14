@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.textBoxUserName = new System.Windows.Forms.TextBox();
             this.textBoxPassWord = new System.Windows.Forms.TextBox();
             this.checkBoxShowPw = new System.Windows.Forms.CheckBox();
@@ -71,19 +71,20 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Password";
             // 
-            // button1
+            // buttonLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(51, 468);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(373, 61);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.White;
+            this.buttonLogin.Location = new System.Drawing.Point(51, 468);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(373, 61);
+            this.buttonLogin.TabIndex = 3;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBoxUserName
             // 
@@ -166,7 +167,7 @@
             this.Controls.Add(this.checkBoxShowPw);
             this.Controls.Add(this.textBoxPassWord);
             this.Controls.Add(this.textBoxUserName);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -186,7 +187,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.TextBox textBoxUserName;
         private System.Windows.Forms.TextBox textBoxPassWord;
         private System.Windows.Forms.CheckBox checkBoxShowPw;
