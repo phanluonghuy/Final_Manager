@@ -36,6 +36,7 @@ namespace Final_Manager.Staff
             formAddItems.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             formAddItems.Dock = DockStyle.Fill;
             formAddItems.Show();
+            //MessageBox.Show(DateTime.Now.ToString("ssHHddyy"));
             //Load_Form(formAddItems,this.PanelMain);
         }
 

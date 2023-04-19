@@ -16,5 +16,11 @@ namespace Final_Manager.Staff
         {
             InitializeComponent();
         }
+
+        private void FormReport_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewerImport.RefreshReport();
+        }
     }
 }
