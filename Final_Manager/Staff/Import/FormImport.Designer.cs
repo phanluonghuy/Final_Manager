@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.DataGridViewImport = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.warehouseReceiptsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,81 +47,26 @@
             this.ButtonImport = new Guna.UI2.WinForms.Guna2Button();
             this.ComboBoxQuickAdd = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.ButtonUpload = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBoxUpload = new System.Windows.Forms.PictureBox();
+            this.DataGridViewImport = new Zuby.ADGV.AdvancedDataGridView();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.brandDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.proImageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.unitPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.receiptDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.warehouseReceiptsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewImport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouseReceiptsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpload)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewImport)).BeginInit();
             this.SuspendLayout();
             // 
-            // DataGridViewImport
+            // warehouseReceiptsBindingSource
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.DataGridViewImport.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewImport.AutoGenerateColumns = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridViewImport.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridViewImport.ColumnHeadersHeight = 18;
-            this.DataGridViewImport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DataGridViewImport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productIDDataGridViewTextBoxColumn,
-            this.productNameDataGridViewTextBoxColumn,
-            this.brandDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.unitPriceDataGridViewTextBoxColumn,
-            this.receiptDateDataGridViewTextBoxColumn,
-            this.quantityDataGridViewTextBoxColumn,
-            this.totalDataGridViewTextBoxColumn});
-            this.DataGridViewImport.DataSource = this.warehouseReceiptsBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewImport.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGridViewImport.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridViewImport.Location = new System.Drawing.Point(12, 12);
-            this.DataGridViewImport.Name = "DataGridViewImport";
-            this.DataGridViewImport.RowHeadersVisible = false;
-            this.DataGridViewImport.RowHeadersWidth = 51;
-            this.DataGridViewImport.RowTemplate.Height = 24;
-            this.DataGridViewImport.Size = new System.Drawing.Size(703, 228);
-            this.DataGridViewImport.TabIndex = 0;
-            this.DataGridViewImport.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridViewImport.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.DataGridViewImport.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.DataGridViewImport.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.DataGridViewImport.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.DataGridViewImport.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridViewImport.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridViewImport.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.DataGridViewImport.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataGridViewImport.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DataGridViewImport.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGridViewImport.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DataGridViewImport.ThemeStyle.HeaderStyle.Height = 18;
-            this.DataGridViewImport.ThemeStyle.ReadOnly = false;
-            this.DataGridViewImport.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridViewImport.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.DataGridViewImport.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DataGridViewImport.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.DataGridViewImport.ThemeStyle.RowsStyle.Height = 24;
-            this.DataGridViewImport.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridViewImport.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.warehouseReceiptsBindingSource.DataSource = typeof(Final_Manager.WarehouseReceipts);
             // 
             // label1
             // 
@@ -331,7 +273,7 @@
             this.ButtonImport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ButtonImport.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ButtonImport.ForeColor = System.Drawing.Color.White;
-            this.ButtonImport.Location = new System.Drawing.Point(472, 430);
+            this.ButtonImport.Location = new System.Drawing.Point(545, 430);
             this.ButtonImport.Name = "ButtonImport";
             this.ButtonImport.Size = new System.Drawing.Size(180, 45);
             this.ButtonImport.TabIndex = 16;
@@ -363,72 +305,147 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "Quick Add";
             // 
+            // ButtonUpload
+            // 
+            this.ButtonUpload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonUpload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonUpload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonUpload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ButtonUpload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ButtonUpload.ForeColor = System.Drawing.Color.White;
+            this.ButtonUpload.Location = new System.Drawing.Point(357, 430);
+            this.ButtonUpload.Name = "ButtonUpload";
+            this.ButtonUpload.Size = new System.Drawing.Size(100, 45);
+            this.ButtonUpload.TabIndex = 20;
+            this.ButtonUpload.Text = "Upload";
+            this.ButtonUpload.Click += new System.EventHandler(this.ButtonUpload_Click);
+            // 
+            // pictureBoxUpload
+            // 
+            this.pictureBoxUpload.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxUpload.Location = new System.Drawing.Point(453, 430);
+            this.pictureBoxUpload.Name = "pictureBoxUpload";
+            this.pictureBoxUpload.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUpload.TabIndex = 21;
+            this.pictureBoxUpload.TabStop = false;
+            // 
+            // DataGridViewImport
+            // 
+            this.DataGridViewImport.AutoGenerateColumns = false;
+            this.DataGridViewImport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewImport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productIDDataGridViewTextBoxColumn,
+            this.productNameDataGridViewTextBoxColumn,
+            this.brandDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn,
+            this.proImageDataGridViewImageColumn,
+            this.unitPriceDataGridViewTextBoxColumn,
+            this.receiptDateDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn,
+            this.totalDataGridViewTextBoxColumn});
+            this.DataGridViewImport.DataSource = this.warehouseReceiptsBindingSource;
+            this.DataGridViewImport.FilterAndSortEnabled = true;
+            this.DataGridViewImport.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
+            this.DataGridViewImport.Location = new System.Drawing.Point(12, 12);
+            this.DataGridViewImport.Name = "DataGridViewImport";
+            this.DataGridViewImport.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.DataGridViewImport.RowHeadersWidth = 51;
+            this.DataGridViewImport.RowTemplate.Height = 24;
+            this.DataGridViewImport.Size = new System.Drawing.Size(689, 228);
+            this.DataGridViewImport.SortStringChangedInvokeBeforeDatasourceUpdate = true;
+            this.DataGridViewImport.TabIndex = 22;
+            // 
             // productIDDataGridViewTextBoxColumn
             // 
             this.productIDDataGridViewTextBoxColumn.DataPropertyName = "ProductID";
             this.productIDDataGridViewTextBoxColumn.HeaderText = "ProductID";
-            this.productIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productIDDataGridViewTextBoxColumn.MinimumWidth = 22;
             this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
+            this.productIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.productIDDataGridViewTextBoxColumn.Width = 125;
             // 
             // productNameDataGridViewTextBoxColumn
             // 
             this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
             this.productNameDataGridViewTextBoxColumn.HeaderText = "ProductName";
-            this.productNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.productNameDataGridViewTextBoxColumn.MinimumWidth = 22;
             this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            this.productNameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.productNameDataGridViewTextBoxColumn.Width = 125;
             // 
             // brandDataGridViewTextBoxColumn
             // 
             this.brandDataGridViewTextBoxColumn.DataPropertyName = "Brand";
             this.brandDataGridViewTextBoxColumn.HeaderText = "Brand";
-            this.brandDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.brandDataGridViewTextBoxColumn.MinimumWidth = 22;
             this.brandDataGridViewTextBoxColumn.Name = "brandDataGridViewTextBoxColumn";
+            this.brandDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.brandDataGridViewTextBoxColumn.Width = 125;
             // 
             // descriptionDataGridViewTextBoxColumn
             // 
             this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
             this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 22;
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            this.descriptionDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.descriptionDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // proImageDataGridViewImageColumn
+            // 
+            this.proImageDataGridViewImageColumn.DataPropertyName = "ProImage";
+            this.proImageDataGridViewImageColumn.HeaderText = "ProImage";
+            this.proImageDataGridViewImageColumn.MinimumWidth = 22;
+            this.proImageDataGridViewImageColumn.Name = "proImageDataGridViewImageColumn";
+            this.proImageDataGridViewImageColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.proImageDataGridViewImageColumn.Width = 125;
             // 
             // unitPriceDataGridViewTextBoxColumn
             // 
             this.unitPriceDataGridViewTextBoxColumn.DataPropertyName = "UnitPrice";
             this.unitPriceDataGridViewTextBoxColumn.HeaderText = "UnitPrice";
-            this.unitPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.unitPriceDataGridViewTextBoxColumn.MinimumWidth = 22;
             this.unitPriceDataGridViewTextBoxColumn.Name = "unitPriceDataGridViewTextBoxColumn";
+            this.unitPriceDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.unitPriceDataGridViewTextBoxColumn.Width = 125;
             // 
             // receiptDateDataGridViewTextBoxColumn
             // 
             this.receiptDateDataGridViewTextBoxColumn.DataPropertyName = "ReceiptDate";
             this.receiptDateDataGridViewTextBoxColumn.HeaderText = "ReceiptDate";
-            this.receiptDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.receiptDateDataGridViewTextBoxColumn.MinimumWidth = 22;
             this.receiptDateDataGridViewTextBoxColumn.Name = "receiptDateDataGridViewTextBoxColumn";
+            this.receiptDateDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.receiptDateDataGridViewTextBoxColumn.Width = 125;
             // 
             // quantityDataGridViewTextBoxColumn
             // 
             this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
             this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quantityDataGridViewTextBoxColumn.MinimumWidth = 22;
             this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            this.quantityDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.quantityDataGridViewTextBoxColumn.Width = 125;
             // 
             // totalDataGridViewTextBoxColumn
             // 
             this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
             this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
-            this.totalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.totalDataGridViewTextBoxColumn.MinimumWidth = 22;
             this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
             this.totalDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // warehouseReceiptsBindingSource
-            // 
-            this.warehouseReceiptsBindingSource.DataSource = typeof(Final_Manager.WarehouseReceipts);
+            this.totalDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.totalDataGridViewTextBoxColumn.Width = 125;
             // 
             // FormImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 487);
+            this.Controls.Add(this.DataGridViewImport);
+            this.Controls.Add(this.pictureBoxUpload);
+            this.Controls.Add(this.ButtonUpload);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.ComboBoxQuickAdd);
             this.Controls.Add(this.ButtonImport);
@@ -446,22 +463,19 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.DataGridViewImport);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormImport";
             this.Text = "FormAddItems";
             this.Load += new System.EventHandler(this.FormImport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewImport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouseReceiptsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpload)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewImport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2DataGridView DataGridViewImport;
-        private System.Windows.Forms.BindingSource warehouseReceiptsBindingSource;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -476,16 +490,21 @@
         private Guna.UI2.WinForms.Guna2Button ButtonRemove;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxBrand;
+        private Guna.UI2.WinForms.Guna2Button ButtonImport;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxQuickAdd;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2Button ButtonUpload;
+        private System.Windows.Forms.BindingSource warehouseReceiptsBindingSource;
+        private System.Windows.Forms.PictureBox pictureBoxUpload;
+        private Zuby.ADGV.AdvancedDataGridView DataGridViewImport;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn brandDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn proImageDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn unitPriceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn receiptDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
-        private Guna.UI2.WinForms.Guna2Button ButtonImport;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxQuickAdd;
-        private System.Windows.Forms.Label label7;
     }
 }

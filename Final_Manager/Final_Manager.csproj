@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=1.2.27706.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DG.AdvancedDataGridView.1.2.27706.9\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -60,6 +63,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,25 +75,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delivery.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Orders.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="Staff\FormDelivery.cs">
+    <Compile Include="Staff\Delivery\FormDelivery.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Staff\FormDelivery.Designer.cs">
+    <Compile Include="Staff\Delivery\FormDelivery.Designer.cs">
       <DependentUpon>FormDelivery.cs</DependentUpon>
     </Compile>
-    <Compile Include="Staff\FormImport.cs">
+    <Compile Include="Staff\Delivery\FormDelivery_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Staff\FormImport.Designer.cs">
+    <Compile Include="Staff\Delivery\FormDelivery_Details.Designer.cs">
+      <DependentUpon>FormDelivery_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Delivery\FromDelivery_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Delivery\FromDelivery_Report.Designer.cs">
+      <DependentUpon>FromDelivery_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Import\FormImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Import\FormImport.Designer.cs">
       <DependentUpon>FormImport.cs</DependentUpon>
     </Compile>
     <Compile Include="Staff\FormMain.cs">
@@ -98,10 +116,10 @@
     <Compile Include="Staff\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Staff\FormReport.cs">
+    <Compile Include="Staff\Report\FormReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Staff\FormReport.Designer.cs">
+    <Compile Include="Staff\Report\FormReport.Designer.cs">
       <DependentUpon>FormReport.cs</DependentUpon>
     </Compile>
     <Compile Include="WarehouseReceipts.cs" />
@@ -118,19 +136,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Staff\FormDelivery.resx">
+    <EmbeddedResource Include="Staff\Delivery\FormDelivery.resx">
       <DependentUpon>FormDelivery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Staff\FormImport.resx">
+    <EmbeddedResource Include="Staff\Delivery\FormDelivery_Details.resx">
+      <DependentUpon>FormDelivery_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Delivery\FromDelivery_Report.resx">
+      <DependentUpon>FromDelivery_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Import\FormImport.resx">
       <DependentUpon>FormImport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staff\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Staff\FormReport.resx">
+    <EmbeddedResource Include="Staff\Report\FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Orders.datasource" />
     <None Include="Properties\DataSources\WarehouseReceipts.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -168,6 +193,9 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

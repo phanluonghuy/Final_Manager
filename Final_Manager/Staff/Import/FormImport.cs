@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace Final_Manager.Staff
 {
@@ -51,6 +47,7 @@ namespace Final_Manager.Staff
                     ProductName = TextBoxName.Text,
                     Brand = TextBoxBrand.Text,
                     Description = TextBoxDescription.Text,
+                    ProImage = pictureBoxUpload.Image,
                     UnitPrice = Convert.ToDouble(TextBoxUnitPrice.Text),
                     ReceiptDate = DateTime.Now,
                     Quantity = Convert.ToInt16(TextBoxQuanity.Text),
@@ -90,7 +87,7 @@ namespace Final_Manager.Staff
             sqlCommand.Parameters.Clear();
 
             string ProductID;
-            for (int i = 0;i < DataGridViewImport.RowCount-1;i++)
+            for (int i = 0; i < DataGridViewImport.RowCount - 1; i++)
             {
                 query = "SELECT * FROM Products WHERE ProductName=@Name;";
                 sqlCommand = new SqlCommand(query, conn);
@@ -98,17 +95,30 @@ namespace Final_Manager.Staff
                 SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+                MemoryStream ms = new MemoryStream();
                 if (dt.Rows.Count <= 0)
                 {
+                    // Convert the image to a byte array
+
+                    DataGridViewCell cell = DataGridViewImport.Rows[i].Cells[4];
+                    Image image = (Image)cell.Value;
+
+                    image.Save(ms,ImageFormat.Jpeg);
+
+
+                    byte[] imageBytes = ms.ToArray();
+
+
                     sqlCommand.Parameters.Clear();
-                    query = "INSERT INTO Products (ProductID, ProductName, Description, Brand, UnitPrice) VALUES (@ProductID, @ProductName, @Description, @Brand, @UnitPrice);";
+                    query = "INSERT INTO Products (ProductID, ProductName, Description, Brand, ProImage, UnitPrice) VALUES (@ProductID, @ProductName, @Description, @Brand, @Image, @UnitPrice);";
                     ProductID = DataGridViewImport.Rows[i].Cells[0].Value.ToString();
                     sqlCommand = new SqlCommand(query, conn);
                     sqlCommand.Parameters.Add(new SqlParameter("@ProductID", DataGridViewImport.Rows[i].Cells[0].Value.ToString()));
                     sqlCommand.Parameters.Add(new SqlParameter("@ProductName", DataGridViewImport.Rows[i].Cells[1].Value.ToString()));
                     sqlCommand.Parameters.Add(new SqlParameter("@Description", DataGridViewImport.Rows[i].Cells[3].Value.ToString()));
                     sqlCommand.Parameters.Add(new SqlParameter("@Brand", DataGridViewImport.Rows[i].Cells[2].Value.ToString()));
-                    sqlCommand.Parameters.Add(new SqlParameter("@UnitPrice", DataGridViewImport.Rows[i].Cells[4].Value.ToString()));
+                    sqlCommand.Parameters.Add(new SqlParameter("@Image", imageBytes));
+                    sqlCommand.Parameters.Add(new SqlParameter("@UnitPrice", DataGridViewImport.Rows[i].Cells[5].Value.ToString()));
                     sqlCommand.ExecuteNonQuery();
                 }
                 else
@@ -122,12 +132,23 @@ namespace Final_Manager.Staff
                 sqlCommand.Parameters.Clear();
                 sqlCommand.Parameters.Add(new SqlParameter("@WarehouseReceiptID", WarehouseReceiptID));
                 sqlCommand.Parameters.Add(new SqlParameter("ProductID", ProductID));
-                sqlCommand.Parameters.Add(new SqlParameter("@Quantity", DataGridViewImport.Rows[i].Cells[6].Value.ToString()));
+                sqlCommand.Parameters.Add(new SqlParameter("@Quantity", DataGridViewImport.Rows[i].Cells[7].Value.ToString()));
                 sqlCommand.ExecuteNonQuery();
             }
             MessageBox.Show("Import successfull !!");
             DataGridViewImport.Rows.Clear();
-       
+            pictureBoxUpload.Image= null;
+            //MessageBox.Show(DataGridViewImport.Rows[i].Cells[5].Value.ToString());
+        //}
+        }
+        public static Bitmap ByteToImage(byte[] blob)
+        {
+            MemoryStream mStream = new MemoryStream();
+            byte[] pData = blob;
+            mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
+            Bitmap bm = new Bitmap(mStream, false);
+            mStream.Dispose();
+            return bm;
         }
         private void ComboBoxQuickAdd_SelectionChangeCommitted(object sender, EventArgs e)
         {
@@ -137,6 +158,32 @@ namespace Final_Manager.Staff
             TextBoxDescription.Text = row["Description"].ToString();
             TextBoxBrand.Text = row["Brand"].ToString();
             TextBoxUnitPrice.Text = row["UnitPrice"].ToString();
+            //MessageBox.Show(row["ProImage"].ToString());
+            byte[] imageBytes = (byte[])row["ProImage"];
+            MemoryStream ms = new MemoryStream(imageBytes);
+            Image image = Image.FromStream(ms);
+            ms.Dispose();
+            pictureBoxUpload.Image = image;
+
+        }
+
+        private void ImageButtonUpload_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ButtonUpload_Click(object sender, EventArgs e)
+        {
+            // open file dialog   
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                pictureBoxUpload.Image = new Bitmap(open.FileName);
+                // image file path  
+                //textBox1.Text = open.FileName;
+            }
         }
     }
 }
