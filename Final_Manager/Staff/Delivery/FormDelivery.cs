@@ -61,29 +61,32 @@ namespace Final_Manager.Staff
             DataGridViewDelivery.DataSource = dt;
         }
 
-        private void DateTimePickerTo_ValueChanged(object sender, EventArgs e)
+        private void guna2Button1_Click_1(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection(Program.strConn);
+            conn.Open();
+            String sSQL = "SELECT  * FROM Orders_Guest \r\nWHERE OrderDate BETWEEN '" + DateTimePickerFromGuest.Value.ToString("yyyy/MM/dd") + "' AND '" + DateTimePickerToGuest.Value.ToString("yyyy/MM/dd") + "'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            DataGridViewGuest.DataSource = dt;
 
         }
 
-        private void DateTimePickerFrom_ValueChanged(object sender, EventArgs e)
+        private void DataGridViewGuest_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (this.DataGridViewDelivery.SelectedRows.Count > 0)
+            {
 
-        }
+                //DataGridViewRow row = this.DataGridViewDelivery.Rows[e.RowIndex];
+                //FormDelivery_Details formDelivery_Details = new FormDelivery_Details(row.Cells[0].Value.ToString());
+                //formDelivery_Details.ShowDialog();
+                DataGridViewRow row = this.DataGridViewGuest.Rows[e.RowIndex];
+                FormDeliveryGuest formDeliveryGuest = new FormDeliveryGuest(row.Cells[4].Value.ToString());
+                formDeliveryGuest.ShowDialog();
+            }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
