@@ -37,6 +37,21 @@ namespace Final_Manager.Staff.Delivery
             MessageBox.Show("You accepted this invoice. Please print invoices");
         }
 
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxOrderID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTotal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         Bitmap bmp;
         private void ButtonPrint_Click(object sender, EventArgs e)
         {

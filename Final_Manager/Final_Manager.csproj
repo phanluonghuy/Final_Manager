@@ -128,6 +128,12 @@
     <Compile Include="Staff\Report\FormReport.Designer.cs">
       <DependentUpon>FormReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff\Setting\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Setting\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="WarehouseReceipts.cs" />
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -163,6 +169,9 @@
     <EmbeddedResource Include="Staff\Report\FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Setting\FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Orders.datasource" />
     <None Include="Properties\DataSources\WarehouseReceipts.datasource" />
@@ -189,6 +198,12 @@
     <None Include="Resources\logo1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\import.png" />
+    <None Include="Resources\delivery-truck.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\setting.png" />
+    <None Include="Resources\c.png" />
+    <None Include="Resources\coming-soon-banner-template-ribbon-label-sign-177653175.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

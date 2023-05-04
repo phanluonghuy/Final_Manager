@@ -59,10 +59,11 @@ namespace Final_Manager
             da.Fill(dt);
             if (dt.Rows.Count > 0)
             {
+                this.Hide();
                 FormMain formMain = new FormMain();
                 formMain.ShowDialog();
                 formMain.Show();
-                this.Close();
+                
             }
             else
             {
