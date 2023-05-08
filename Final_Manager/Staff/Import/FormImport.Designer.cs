@@ -70,10 +70,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 18);
+            this.label1.Size = new System.Drawing.Size(136, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Product Name:";
             // 
@@ -81,10 +80,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 83);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(15, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 18);
+            this.label2.Size = new System.Drawing.Size(104, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Description";
             // 
@@ -92,10 +90,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(407, 34);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(543, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 18);
+            this.label3.Size = new System.Drawing.Size(90, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Unit Price";
             // 
@@ -103,10 +100,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(407, 83);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(543, 102);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 18);
+            this.label4.Size = new System.Drawing.Size(48, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Date";
             // 
@@ -114,10 +110,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(407, 130);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(543, 160);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 18);
+            this.label5.Size = new System.Drawing.Size(78, 24);
             this.label5.TabIndex = 5;
             this.label5.Text = "Quantity";
             // 
@@ -132,13 +127,13 @@
             this.TextBoxName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxName.Location = new System.Drawing.Point(131, 29);
-            this.TextBoxName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TextBoxName.Location = new System.Drawing.Point(175, 36);
+            this.TextBoxName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBoxName.Name = "TextBoxName";
             this.TextBoxName.PasswordChar = '\0';
             this.TextBoxName.PlaceholderText = "";
             this.TextBoxName.SelectedText = "";
-            this.TextBoxName.Size = new System.Drawing.Size(172, 31);
+            this.TextBoxName.Size = new System.Drawing.Size(229, 38);
             this.TextBoxName.TabIndex = 6;
             // 
             // TextBoxDescription
@@ -152,13 +147,13 @@
             this.TextBoxDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxDescription.Location = new System.Drawing.Point(131, 76);
-            this.TextBoxDescription.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TextBoxDescription.Location = new System.Drawing.Point(175, 94);
+            this.TextBoxDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBoxDescription.Name = "TextBoxDescription";
             this.TextBoxDescription.PasswordChar = '\0';
             this.TextBoxDescription.PlaceholderText = "";
             this.TextBoxDescription.SelectedText = "";
-            this.TextBoxDescription.Size = new System.Drawing.Size(172, 31);
+            this.TextBoxDescription.Size = new System.Drawing.Size(229, 38);
             this.TextBoxDescription.TabIndex = 7;
             // 
             // TextBoxUnitPrice
@@ -172,14 +167,14 @@
             this.TextBoxUnitPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxUnitPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxUnitPrice.Location = new System.Drawing.Point(561, 21);
-            this.TextBoxUnitPrice.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TextBoxUnitPrice.Location = new System.Drawing.Point(748, 26);
+            this.TextBoxUnitPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBoxUnitPrice.Name = "TextBoxUnitPrice";
             this.TextBoxUnitPrice.PasswordChar = '\0';
             this.TextBoxUnitPrice.PlaceholderText = "";
             this.TextBoxUnitPrice.SelectedText = "";
-            this.TextBoxUnitPrice.Size = new System.Drawing.Size(172, 31);
-            this.TextBoxUnitPrice.TabIndex = 8;
+            this.TextBoxUnitPrice.Size = new System.Drawing.Size(229, 38);
+            this.TextBoxUnitPrice.TabIndex = 9;
             // 
             // TextBoxQuanity
             // 
@@ -192,14 +187,14 @@
             this.TextBoxQuanity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxQuanity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxQuanity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxQuanity.Location = new System.Drawing.Point(561, 117);
-            this.TextBoxQuanity.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TextBoxQuanity.Location = new System.Drawing.Point(748, 144);
+            this.TextBoxQuanity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBoxQuanity.Name = "TextBoxQuanity";
             this.TextBoxQuanity.PasswordChar = '\0';
             this.TextBoxQuanity.PlaceholderText = "";
             this.TextBoxQuanity.SelectedText = "";
-            this.TextBoxQuanity.Size = new System.Drawing.Size(172, 31);
-            this.TextBoxQuanity.TabIndex = 9;
+            this.TextBoxQuanity.Size = new System.Drawing.Size(229, 38);
+            this.TextBoxQuanity.TabIndex = 10;
             // 
             // DateTimePickerImport
             // 
@@ -207,13 +202,13 @@
             this.DateTimePickerImport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
             this.DateTimePickerImport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateTimePickerImport.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateTimePickerImport.Location = new System.Drawing.Point(561, 72);
-            this.DateTimePickerImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DateTimePickerImport.Location = new System.Drawing.Point(748, 89);
+            this.DateTimePickerImport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DateTimePickerImport.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTimePickerImport.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTimePickerImport.Name = "DateTimePickerImport";
-            this.DateTimePickerImport.Size = new System.Drawing.Size(172, 29);
-            this.DateTimePickerImport.TabIndex = 10;
+            this.DateTimePickerImport.Size = new System.Drawing.Size(229, 36);
+            this.DateTimePickerImport.TabIndex = 11;
             this.DateTimePickerImport.Value = new System.DateTime(2023, 5, 4, 0, 0, 0, 0);
             // 
             // ButtonAdd
@@ -225,10 +220,10 @@
             this.ButtonAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
             this.ButtonAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonAdd.ForeColor = System.Drawing.Color.White;
-            this.ButtonAdd.Location = new System.Drawing.Point(761, 219);
-            this.ButtonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonAdd.Location = new System.Drawing.Point(1015, 270);
+            this.ButtonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonAdd.Name = "ButtonAdd";
-            this.ButtonAdd.Size = new System.Drawing.Size(91, 37);
+            this.ButtonAdd.Size = new System.Drawing.Size(121, 46);
             this.ButtonAdd.TabIndex = 11;
             this.ButtonAdd.Text = "Add";
             this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
@@ -242,10 +237,10 @@
             this.ButtonRemove.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
             this.ButtonRemove.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonRemove.ForeColor = System.Drawing.Color.White;
-            this.ButtonRemove.Location = new System.Drawing.Point(867, 219);
-            this.ButtonRemove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonRemove.Location = new System.Drawing.Point(1156, 270);
+            this.ButtonRemove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonRemove.Name = "ButtonRemove";
-            this.ButtonRemove.Size = new System.Drawing.Size(91, 37);
+            this.ButtonRemove.Size = new System.Drawing.Size(121, 46);
             this.ButtonRemove.TabIndex = 12;
             this.ButtonRemove.Text = "Remove";
             this.ButtonRemove.Click += new System.EventHandler(this.ButtonRemove_Click);
@@ -254,10 +249,9 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 130);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(15, 160);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 18);
+            this.label6.Size = new System.Drawing.Size(60, 24);
             this.label6.TabIndex = 14;
             this.label6.Text = "Brand";
             // 
@@ -272,14 +266,14 @@
             this.TextBoxBrand.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxBrand.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxBrand.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxBrand.Location = new System.Drawing.Point(131, 117);
-            this.TextBoxBrand.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.TextBoxBrand.Location = new System.Drawing.Point(175, 144);
+            this.TextBoxBrand.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextBoxBrand.Name = "TextBoxBrand";
             this.TextBoxBrand.PasswordChar = '\0';
             this.TextBoxBrand.PlaceholderText = "";
             this.TextBoxBrand.SelectedText = "";
-            this.TextBoxBrand.Size = new System.Drawing.Size(172, 31);
-            this.TextBoxBrand.TabIndex = 15;
+            this.TextBoxBrand.Size = new System.Drawing.Size(229, 38);
+            this.TextBoxBrand.TabIndex = 8;
             // 
             // ButtonImport
             // 
@@ -290,10 +284,10 @@
             this.ButtonImport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
             this.ButtonImport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonImport.ForeColor = System.Drawing.Color.White;
-            this.ButtonImport.Location = new System.Drawing.Point(823, 11);
-            this.ButtonImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonImport.Location = new System.Drawing.Point(1097, 14);
+            this.ButtonImport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonImport.Name = "ButtonImport";
-            this.ButtonImport.Size = new System.Drawing.Size(135, 37);
+            this.ButtonImport.Size = new System.Drawing.Size(180, 46);
             this.ButtonImport.TabIndex = 16;
             this.ButtonImport.Text = "Import";
             this.ButtonImport.Click += new System.EventHandler(this.ButtonImport_Click);
@@ -308,10 +302,10 @@
             this.ComboBoxQuickAdd.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ComboBoxQuickAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ComboBoxQuickAdd.ItemHeight = 30;
-            this.ComboBoxQuickAdd.Location = new System.Drawing.Point(98, 210);
-            this.ComboBoxQuickAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxQuickAdd.Location = new System.Drawing.Point(131, 258);
+            this.ComboBoxQuickAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxQuickAdd.Name = "ComboBoxQuickAdd";
-            this.ComboBoxQuickAdd.Size = new System.Drawing.Size(173, 36);
+            this.ComboBoxQuickAdd.Size = new System.Drawing.Size(229, 36);
             this.ComboBoxQuickAdd.TabIndex = 17;
             this.ComboBoxQuickAdd.SelectionChangeCommitted += new System.EventHandler(this.ComboBoxQuickAdd_SelectionChangeCommitted);
             // 
@@ -319,10 +313,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 219);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(24, 270);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 18);
+            this.label7.Size = new System.Drawing.Size(99, 24);
             this.label7.TabIndex = 18;
             this.label7.Text = "Quick Add";
             // 
@@ -335,10 +328,10 @@
             this.ButtonUpload.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(157)))), ((int)(((byte)(88)))));
             this.ButtonUpload.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonUpload.ForeColor = System.Drawing.Color.White;
-            this.ButtonUpload.Location = new System.Drawing.Point(658, 200);
-            this.ButtonUpload.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ButtonUpload.Location = new System.Drawing.Point(877, 246);
+            this.ButtonUpload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonUpload.Name = "ButtonUpload";
-            this.ButtonUpload.Size = new System.Drawing.Size(75, 37);
+            this.ButtonUpload.Size = new System.Drawing.Size(100, 46);
             this.ButtonUpload.TabIndex = 20;
             this.ButtonUpload.Text = "Upload";
             this.ButtonUpload.Click += new System.EventHandler(this.ButtonUpload_Click);
@@ -346,6 +339,7 @@
             // DataGridViewImport
             // 
             this.DataGridViewImport.AutoGenerateColumns = false;
+            this.DataGridViewImport.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.DataGridViewImport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewImport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productIDDataGridViewTextBoxColumn,
@@ -360,13 +354,14 @@
             this.DataGridViewImport.DataSource = this.warehouseReceiptsBindingSource;
             this.DataGridViewImport.FilterAndSortEnabled = true;
             this.DataGridViewImport.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
-            this.DataGridViewImport.Location = new System.Drawing.Point(11, 260);
-            this.DataGridViewImport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DataGridViewImport.Location = new System.Drawing.Point(15, 320);
+            this.DataGridViewImport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DataGridViewImport.Name = "DataGridViewImport";
             this.DataGridViewImport.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DataGridViewImport.RowHeadersWidth = 51;
             this.DataGridViewImport.RowTemplate.Height = 24;
-            this.DataGridViewImport.Size = new System.Drawing.Size(947, 308);
+            this.DataGridViewImport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridViewImport.Size = new System.Drawing.Size(1263, 379);
             this.DataGridViewImport.SortStringChangedInvokeBeforeDatasourceUpdate = true;
             this.DataGridViewImport.TabIndex = 22;
             // 
@@ -374,20 +369,19 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(407, 177);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(543, 218);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 18);
+            this.label8.Size = new System.Drawing.Size(62, 24);
             this.label8.TabIndex = 23;
             this.label8.Text = "Image";
             // 
             // pictureBoxUpload
             // 
             this.pictureBoxUpload.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxUpload.Location = new System.Drawing.Point(561, 177);
-            this.pictureBoxUpload.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBoxUpload.Location = new System.Drawing.Point(748, 218);
+            this.pictureBoxUpload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxUpload.Name = "pictureBoxUpload";
-            this.pictureBoxUpload.Size = new System.Drawing.Size(69, 60);
+            this.pictureBoxUpload.Size = new System.Drawing.Size(91, 73);
             this.pictureBoxUpload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxUpload.TabIndex = 21;
             this.pictureBoxUpload.TabStop = false;
@@ -480,9 +474,9 @@
             // 
             // FormImport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 579);
+            this.ClientSize = new System.Drawing.Size(1292, 713);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.DataGridViewImport);
             this.Controls.Add(this.pictureBoxUpload);
@@ -506,7 +500,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormImport";
             this.Text = "FormAddItems";
             this.Load += new System.EventHandler(this.FormImport_Load);

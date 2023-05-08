@@ -47,7 +47,7 @@ namespace Final_Manager
             SqlConnection conn = new SqlConnection(Program.strConn);
             //conn.ConnectionString = @"Data Source=(local); Initial Catalog=LabDB;Integrated Security=True";
             conn.Open();
-            String sSQL = "SELECT Username, Password FROM ManagerLogin WHERE Username=@Name and Password=@PWD";
+            String sSQL = "SELECT Username, Password FROM ManagerLogin WHERE Username=@Name and Password=@PWD and isAdmin=1";
 
             SqlCommand cmd = new SqlCommand(sSQL, conn);
             //cmd.Parameters.Add("@Name", textBoxUserName.Text.ToString());

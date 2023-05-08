@@ -31,13 +31,21 @@ namespace Final_Manager.Staff.Delivery
             DataTable dt = new DataTable();
             da.Fill(dt);
             DataGridViewGuest.DataSource = dt;
-            //double total = 0.0;
+        }
 
-            //for (int i = 0; i < DataGridViewGuest.RowCount - 1; i++)
-            //{
-            //    total += Convert.ToDouble(DataGridViewGuest.Rows[i].Cells[4].Value);
-            //}
-            //TextBoxTotal.Text = total.ToString();
+        private void ButtonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ButtonAccept_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(Program.strConn);
+            string sSQL = "UPDATE Orders_Guest\r\nSET Status = 'Delivery'\r\nWHERE OrderID='" + _orderID + "';";
+            SqlCommand command = new SqlCommand(sSQL, connection);
+            connection.Open();
+            command.ExecuteNonQuery();
+            MessageBox.Show("You accepted this invoice.");
         }
     }
 }

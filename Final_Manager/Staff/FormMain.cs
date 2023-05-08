@@ -96,6 +96,7 @@ namespace Final_Manager.Staff
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)

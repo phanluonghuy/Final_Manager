@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Final_Manager.Staff
 {
@@ -39,6 +40,10 @@ namespace Final_Manager.Staff
             DataTable dt = new DataTable();
             da.Fill(dt);
             DataGridViewBest.DataSource = dt;
+                chartProduct.DataSource = dt;
+                chartProduct.Series["Amount"].XValueMember = "ProductName";
+                chartProduct.Series["Amount"].YValueMembers = "TotalQuantitySold";
+                chartProduct.Titles.Add("Best selling");
 
             sSQL = "SELECT SUM(o.TotalAmount) \r\nFROM Orders o\r\nWHERE o.OrderDate BETWEEN '" + DateTimePickerFrom.Value.ToString("yyyy/MM/dd") + "' AND '" + DateTimePickerTo.Value.ToString("yyyy/MM/dd") + "'";
 
@@ -61,5 +66,6 @@ namespace Final_Manager.Staff
                 //nothing
             }
         }
+
     }
 }

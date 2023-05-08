@@ -31,6 +31,8 @@ namespace Final_Manager.Staff
             ComboBoxQuickAdd.ValueMember = "ProductID";
             ComboBoxQuickAdd.DisplayMember = "ProductName";
             ComboBoxQuickAdd.DataSource = dt;
+
+            DateTimePickerImport.Value = DateTime.Now;
         }
         private string Generate_id(string brand)
         {
